@@ -108,7 +108,7 @@ class AewProfile(models.Model):
     sex = models.CharField(max_length=50, null=True, blank=True, help_text='Sex', default=None)
     age = models.IntegerField(null=True, blank=True, default=None, help_text='Age')
     employmentStatus = models.CharField(max_length=100, null=True, blank=True, help_text='Employment Status', default=None)
-    yearsInService = models.IntegerField(null=True, blank=True, default=None, help_text='Years in Service')
+    yearsInService = models.FloatField(null=True, blank=True, default=None, help_text='Years in Service')
     birthdate = models.DateField(null=True, blank=True, default=None, help_text='Birthdate')
     trainingsWanted = models.TextField(null=True, blank=True, help_text='Rice-related Trainings Wanted to Attend', default=None)
     remarks = models.CharField(max_length=50, null=True, blank=True, help_text='Status of AEW (Type Old, New, Resigned, or Retired Staff)', default=None)
