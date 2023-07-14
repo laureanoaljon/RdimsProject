@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'rdims_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# Production
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -88,6 +89,18 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+# # Development
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'rdims',
+#         'USER': 'postgres',
+#         'PASSWORD': 'ricelytics',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
